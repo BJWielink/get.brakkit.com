@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>deployer packages</title>
+<style>
+  body { font: 16px/1.5 system-ui, sans-serif; max-width: 46rem; margin: 2rem auto; padding: 0 1rem; color: #1f2328; background: #fff; }
+  pre, code { font: 14px/1.45 ui-monospace, monospace; }
+  pre { background: #f6f8fa; padding: .75rem 1rem; overflow-x: auto; border-radius: 6px; }
+  h1 { font-size: 1.6rem; } h2 { font-size: 1.2rem; margin-top: 2rem; }
+  @media (prefers-color-scheme: dark) { body { color: #e6edf3; background: #0d1117; } pre { background: #161b22; } }
+</style>
+</head>
+<body>
+<h1>deployer packages</h1>
+<p>This site hosts the signed apt repository and the installer of <strong>deployer</strong>, a
+single-server deployment platform for <strong>Debian 13 (trixie), amd64</strong>: nginx with
+HTTP/3 in front, rootless Podman, ACME certificates, zero-downtime deploys and automatic updates.</p>
+
+<h2>Install</h2>
+<p>On a fresh Debian 13 server, as root:</p>
+<pre>curl -fsSL https://get.brakkit.com/install.sh | sudo sh</pre>
+<p>Beta channel: <code>curl -fsSL https://get.brakkit.com/install.sh | sudo sh -s -- --channel beta</code>.
+Read the script first if you like: <a href="install.sh">install.sh</a>. It sets up this repository
+and nginx.org's, installs the <code>deployer</code> package and runs <code>deployer setup</code>.</p>
+
+<h2>Repository</h2>
+<pre>Types: deb
+URIs: https://get.brakkit.com
+Suites: trixie
+Components: main
+Architectures: amd64
+Signed-By: /usr/share/keyrings/deployer-archive-keyring.pgp</pre>
+<p>Suites: <code>trixie</code> (stable) and <code>trixie-beta</code> (beta). Signing key
+(<a href="deployer-archive-keyring.pgp">binary keyring</a>), Ed25519:</p>
+<pre>357C 9B7E EE02 6287 976A 6D7F B4D6 AAE5 97BF 45B1</pre>
+<p>The package needs nginx from nginx.org (1.30 branch); <a href="install.sh">install.sh</a>
+shows the exact source and pin files.</p>
+
+<h2>Available versions</h2>
+<p>stable: <code>0.1.1-1+deb13 0.1.0-1+deb13</code><br>
+beta: <code>0.1.1-1+deb13 0.1.0-1+deb13</code></p>
+</body>
+</html>

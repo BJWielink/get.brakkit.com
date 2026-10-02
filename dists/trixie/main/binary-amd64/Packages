@@ -1,0 +1,44 @@
+Package: deployer
+Architecture: amd64
+Version: 0.1.0-1+deb13
+Priority: optional
+Section: admin
+Maintainer: Bert Jan Wielink <bertjwielink@gmail.com>
+Installed-Size: 16636
+Depends: aardvark-dns, ca-certificates, catatonit, conmon, crun, dbus-user-session, git, golang-github-containers-common, iproute2, libc6 (>= 2.34), libc6 (>= 2.39), netavark, nftables, nginx (>= 1.30.0), openssh-client, passt, podman (>= 5.4), systemd (>= 257), systemd-oomd, systemd-zram-generator, uidmap
+Recommends: needrestart, git-lfs
+Conflicts: apache2
+Filename: pool/main/d/deployer/deployer_0.1.0-1+deb13_amd64.deb
+Size: 5495532
+SHA256: 4b141efacd191a3f8b64bf51cfe8fcf9f27f38b2bd8455504395d3d730a1aea0
+SHA512: 1b415db39ec43a4b9a5c112089f148c61f21684d58680e8337376848e158e7c48df039951af85addb1c43e6c7aa53cb8020122f147187d161622e9fde551436f
+Homepage: https://get.brakkit.com
+Description: Single-server deployment platform for Debian 13 (admin CLI)
+ Single-server deployment platform for Debian 13: git repositories with a
+ Dockerfile and a compose file in, running HTTPS sites out. nginx (HTTP/3) in
+ front, rootless Podman under one shared runtime user, ACME certificates,
+ zero-downtime deploys and automatic updates. Run 'deployer setup' after
+ installation.
+
+Package: deployer
+Architecture: amd64
+Version: 0.1.1-1+deb13
+Priority: optional
+Section: admin
+Maintainer: Bert Jan Wielink <bertjwielink@gmail.com>
+Installed-Size: 16643
+Depends: aardvark-dns, ca-certificates, catatonit, conmon, crun, dbus-user-session, git, golang-github-containers-common, iproute2, libc6 (>= 2.34), libc6 (>= 2.39), netavark, nftables, nginx (>= 1.30.0), openssh-client, passt, podman (>= 5.4), systemd (>= 257), systemd-oomd, systemd-zram-generator, uidmap
+Recommends: needrestart, git-lfs
+Conflicts: apache2
+Filename: pool/main/d/deployer/deployer_0.1.1-1+deb13_amd64.deb
+Size: 5498448
+SHA256: 71f5b81a9dab3ae7038540a89d7ea38ee38583336ee8d597f3577e6792cf4943
+SHA512: 2c9858f70bbb019cc8e92e07bac6cc9321fd324bf932c1e55554170b5467244dc55510fc07089dcfaeb70a339aff488a754a3580c6fce7b1e62ffceeb4a4a226
+Homepage: https://get.brakkit.com
+Description: Single-server deployment platform for Debian 13 (admin CLI)
+ Single-server deployment platform for Debian 13: git repositories with a
+ Dockerfile and a compose file in, running HTTPS sites out. nginx (HTTP/3) in
+ front, rootless Podman under one shared runtime user, ACME certificates,
+ zero-downtime deploys and automatic updates. Run 'deployer setup' after
+ installation.
+

@@ -1,0 +1,17 @@
+Architectures: amd64
+Codename: trixie
+Components: main
+Acquire-By-Hash: yes
+Date: Fri, 02 Oct 2026 15:39:58 +0000
+Description: deployer packages for Debian 13 (stable channel)
+Label: deployer
+Origin: deployer
+Suite: trixie
+SHA256:
+ 6057410003972839af94fd9db68f2d87e8d80bdf9c3e92493c6ca5300f18e0c0             2482 main/binary-amd64/Packages
+ 9ae0d9f5d5d19425de587304dac68a6406f78b8769c62461ae52226bac593011              952 main/binary-amd64/Packages.gz
+ d0b8343ba54d4d291ce93818b9699fc90d79a1f605a7b2926421116d47e891e9             1024 main/binary-amd64/Packages.xz
+SHA512:
+ 98fd3510d7804ea6303bd384112544fd36007369fa2519afbbfba8f8a1a7cc943aaf77ca231036cc1f55b0de0d9b1759219832d0287063bc168c28d33e3575a7             2482 main/binary-amd64/Packages
+ cf62e19b0239213845a548232fc600edde695aadf642728480ef39e478f4e7dc33833c907c30906ac2fea2d61915030527988cbbeb927a3d099cb5477665aacb              952 main/binary-amd64/Packages.gz
+ ba81ddb988d9fc0368d0ba7c2042d3dc44f667c06688cee8e2f4af8c98b3fe9dc6f65a3ed987aa7b56368c1b3b203db7d7af6ff2f9c5f5aef914186e035b9d74             1024 main/binary-amd64/Packages.xz
